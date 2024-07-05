@@ -9,7 +9,7 @@ jobs:
   dispatch_to_other:
     runs-on: ubuntu-latest
     steps:
-      - name: Dispatch Event to other Repo
+      - name: Dispatch Event to other Rep
         env:
           REPO_B_OWNER: gagandeep3458
           REPO_B_NAME: BuilderProject
