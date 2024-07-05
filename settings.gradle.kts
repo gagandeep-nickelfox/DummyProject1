@@ -19,5 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
+// abc
+
 rootProject.name = "DummyProject1"
 include(":app")
