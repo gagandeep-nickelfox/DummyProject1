@@ -11,12 +11,12 @@ jobs:
     steps:
       - name: Dispatch Event to other Repo
         env:
-          REPO_B_OWNER: AccountB
-          REPO_B_NAME: MyRepoB
+          REPO_B_OWNER: gagandeep3458
+          REPO_B_NAME: BuilderProject
           GITHUB_TOKEN: ${{ secrets.OTHER_REPO_DISPATCH_TOKEN }}
         run: |
           curl -X POST \
             -H "Accept: application/vnd.github.v3+json" \
             -H "Authorization: Bearer $GITHUB_TOKEN" \
             https://api.github.com/repos/gagandeep3458/BuilderProject/dispatches \
-            -d '{"event_type": "trigger_build_deploy", "client_payload": {"branch": "${{ github.ref_name }}"}}'
+            -d '{"event_type": "trigger_workflow_a", "client_payload": {"branch": "${{ github.ref_name }}"}}'
