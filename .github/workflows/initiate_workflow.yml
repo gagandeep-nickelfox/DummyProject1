@@ -19,4 +19,4 @@ jobs:
             -H "Accept: application/vnd.github.v3+json" \
             -H "Authorization: Bearer $GITHUB_TOKEN" \
             https://api.github.com/repos/gagandeep3458/BuilderProject/dispatches \
-            -d '{"event_type": "trigger_workflow_a", "client_payload": {"branch": "${{ github.ref_name }}"}, "repo_name": "DummyProject1"}'
+            -d '{"event_type": "trigger_workflow_a", "client_payload": {"branch": "${{ github.ref_name }}"}}'
